@@ -12,13 +12,13 @@ import com.github.ojh.kedditbysteps.commons.extensions.inflate
  */
 class LoadingDelegateAdapter : ViewTypeDelegateAdapter {
     override fun onCreateViewHolder(parent: ViewGroup): RecyclerView.ViewHolder =
-            TurnsViewHolder(parent)
+            LoadingViewHolder(parent)
 
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, item: ViewType) {
     }
 
-    class TurnsViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
+    class LoadingViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
             parent.inflate(R.layout.news_item_loading)) {
     }
 }
