@@ -6,6 +6,12 @@ import com.github.ojh.kedditbysteps.commons.adapter.ViewType
 /**
  * Created by 01071724654 on 2016-08-13.
  */
+data class RedditNews(
+        val after: String,
+        val before: String,
+        val news: List<RedditNewsItem>
+)
+
 data class RedditNewsItem(
         val author: String,
         val title: String,
